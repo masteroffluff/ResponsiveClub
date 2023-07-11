@@ -10,10 +10,8 @@
 
 
 body{
-    /* background-color: black; */
-    
-    /* background-color: #a81c1f; */
-    background-image:url('media/ManchesterKontravoid23.PNG');
+
+    background-image:url('media/ManchesterKontravoid23.PNG'); /* put rhys in the gutter (nurk)*/
     background-position: center top;
     background-attachment: fixed;
     color: black;
@@ -39,7 +37,7 @@ main{
 }
 main div{
     display: inline-block;
-    /* border:1px solid greenyellow;
+    /* border:1px solid greenyellow; /* remove */
  */
 }
 .words{
@@ -50,8 +48,10 @@ main div{
 }
 
 .asqn{
+    
     font-size:1.2em;
     line-height:20%;
+    text-shadow: 0 10px 0px #38090A, 0 20px 0px #4E0D0E, 0 30px 0px #641112, 0 45px 0px #7A1416, 0 60px 0px #8F181A;
 }
 
 .pics{
