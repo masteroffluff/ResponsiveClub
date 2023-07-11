@@ -1,0 +1,65 @@
+
+@font-face {
+    font-family: 'horizon';
+    src: url('/font/horizon.otf');
+}
+
+:root{
+    font-family: 'horizon';
+}
+
+
+body{
+    /* background-color: black; */
+    
+    /* background-color: #a81c1f; */
+    background-image:url('media/ManchesterKontravoid23.PNG');
+    background-position: center top;
+    background-attachment: fixed;
+    color: black;
+    /* put everything in a center column */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.mainContainer{
+    max-width : 1079px;
+    width:100%;
+    background-color: #a81c1f;
+
+}
+main{
+    display: flex;
+    justify-content:space-between;
+    flex-flow: row wrap-reverse;
+    align-items: flex-start;
+}
+main div{
+    display: inline-block;
+    /* border:1px solid greenyellow;
+ */
+}
+.words{
+    width:45%;
+
+
+
+}
+
+.asqn{
+    font-size:1.2em;
+    line-height:20%;
+}
+
+.pics{
+    width:45%;
+    vertical-align: top;
+}
+
+.pics img{
+    /* padding:10px */
+    max-width:300px;
+}
