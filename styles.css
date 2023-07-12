@@ -72,9 +72,21 @@ header img{
     grid-area:words1;
 }
 .words2{
+    /* ngry, sweaty, queer noise from a */
     grid-area:words2;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    mix-blend-mode: multiply;
+
+}
+.words2 p{
+    background: url("media/Studio 2022.PNG");
+    background-position: top right;
+	background-size: cover;
 }
 .words3{
+    /* OPENING SALVO */
     grid-area:words3;
 }
 .pic1{
