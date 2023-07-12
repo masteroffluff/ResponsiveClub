@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: 'horizon';
-    src: url('/font/horizon.otf');
+    src: url('font/horizon.otf');
 }
 
 :root{
-    font-family: 'horizon';
+    font-family: horizon, sans-serif;
 }
 
 
@@ -24,42 +24,74 @@ body{
 }
 
 .mainContainer{
-    max-width : 1079px;
-    width:100%;
+    /* max-width : 1079px; */
+    /* max-width: 1500px; */
+    min-height: 100vh;
     background-color: #a81c1f;
+    display:grid;
+    position: relative;
+    margin: auto;
+    grid-template-columns: 500px 500px 500px;
+    grid-auto-rows: 100%;
+    gap: 10px;
+    grid-template-areas: 
+                        "header header socials"
+                        "header header asqn"
+                        "pic1 words1 logo"
+                        "pic1 words1 words2"
+                        "words3 words3 pic2"
+                        "upcoming upcoming pic2"
+
+    ;
+    /* border:1px solid greenyellow; */ /* remove */
 
 }
-main{
-    display: flex;
-    justify-content:space-between;
-    flex-flow: row wrap-reverse;
-    align-items: flex-start;
+/* .mainContainer section{
+    border:1px solid greenyellow; 
+} */
+header{
+    /* border:1px solid greenyellow;  */
 }
-main div{
-    display: inline-block;
-    /* border:1px solid greenyellow; /* remove */
- */
-}
-.words{
-    width:45%;
-
-
-
+.pics img{
+    width: 100%;
 }
 
-.asqn{
+header{
     
+    grid-area:header;
+}
+header img{
+    width: 100%;
+}
+.socials{
+    grid-area:socials;
+
+}
+.words1{
+    /* let ther be meat */
+    grid-area:words1;
+}
+.words2{
+    grid-area:words2;
+}
+.words3{
+    grid-area:words3;
+}
+.pic1{
+    grid-area:pic1;
+}
+.pic2{
+    grid-area:pic2;
+}
+.upcoming{
+    grid-area:upcoming;
+    
+}
+.upcoming img {width:100%}
+.asqn{
+    grid-area:asqn;
     font-size:1.2em;
     line-height:20%;
     text-shadow: 0 10px 0px #38090A, 0 20px 0px #4E0D0E, 0 30px 0px #641112, 0 45px 0px #7A1416, 0 60px 0px #8F181A;
 }
 
-.pics{
-    width:45%;
-    vertical-align: top;
-}
-
-.pics img{
-    /* padding:10px */
-    max-width:300px;
-}
