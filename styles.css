@@ -54,8 +54,8 @@ a:active {
                         "header header socials"
                         "header header words2"
                         "pic1 words1 logo"
-                        "pic1 words1 asqn2"
-                        "pic1 asqn asqn2"
+                        "pic1 words1 ltbm"
+                        "pic1 asqn ltbm"
                         "words3 words3 pic2"
                         "upcoming upcoming pic2"
 
@@ -91,12 +91,15 @@ header img{
     line-height: 2em;
 
 }
+.socialsSmall{
+    display:none;
+}
 .words1{
     /* let ther be meat */
     grid-area:words1;
 }
 .words2{
-    /* ngry, sweaty, queer noise from a */
+    /* Angry, sweaty, queer noise from a */
     grid-area:words2;
     font-size: 2rem;
     color: white;
@@ -132,7 +135,7 @@ header img{
 }
 
 .ltbm{
-    grid-area:asqn2;
+    grid-area:ltbm;
     background-color: black;
     color: #a81c1f;
     font-size: 5em;
@@ -202,15 +205,17 @@ header img{
                         "socials words2"
                         "words1 words1"
                         "pic1 logo"
-                        "pic1 asqn2"
+                        "pic1 ltbm"
                         "words3 pic2"
                         "asqn pic2"
                         "upcoming upcoming"
 
 }
 }
-@media only screen and (max-width: 1010px){
+@media only screen and (max-width: 1010px) and (min-width:501px){
     .mainContainer{
+        max-width: 500px;
+        width:100vw;
         grid-template-columns: 500px;
         grid-auto-rows: 100%;
         gap: 10px;
@@ -221,7 +226,7 @@ header img{
                             "words1"
                             "pic1 "
                             "pic1 "
-                            "asqn2"
+                            "ltbm"
                             "words3"
                             "pic2"
                             "asqn"
@@ -232,6 +237,33 @@ header img{
         display:none;
     }
 } 
+/*reconfigures the site to turn into regular flex box style for the tiny phone peasants*/
+@media only screen and (max-width: 500px){
+    .mainContainer{
+        max-width: 500px;
+        width:100vw;
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    header{
+        display:none;
+    }
+    .ltbm{
+        display:none;
+    }
+    .words2 p{
+        background: url("media/Studio 2022.PNG");
+        background-position: top center;
+        background-size: cover;
+    }
+    .socials{
+        display:none;
+    }
+    .socialsSmall{
+        display:block;
+    }
 
+}
 
   
