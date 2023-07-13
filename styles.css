@@ -23,6 +23,22 @@ body{
     width: 100%;
 }
 
+
+a:link{
+    color:white;
+}
+a:visited{
+    color: grey;
+}
+a:hover {
+
+}
+a:active {
+
+}
+
+
+
 .mainContainer{
     /* max-width : 1079px; */
     /* max-width: 1500px; */
@@ -36,9 +52,10 @@ body{
     gap: 10px;
     grid-template-areas: 
                         "header header socials"
-                        "header header asqn"
+                        "header header words2"
                         "pic1 words1 logo"
-                        "pic1 words1 words2"
+                        "pic1 words1 asqn2"
+                        "pic1 asqn asqn2"
                         "words3 words3 pic2"
                         "upcoming upcoming pic2"
 
@@ -46,6 +63,12 @@ body{
     /* border:1px solid greenyellow; */ /* remove */
 
 }
+
+
+
+
+
+
 /* .mainContainer section{
     border:1px solid greenyellow; 
 } */
@@ -65,6 +88,7 @@ header img{
 }
 .socials{
     grid-area:socials;
+    line-height: 2em;
 
 }
 .words1{
@@ -107,3 +131,59 @@ header img{
     text-shadow: 0 10px 0px #38090A, 0 20px 0px #4E0D0E, 0 30px 0px #641112, 0 45px 0px #7A1416, 0 60px 0px #8F181A;
 }
 
+.ltbm{
+    grid-area:asqn2;
+    background-color: black;
+    color: #a81c1f;
+    font-size: 5em;
+}
+
+
+.meat {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: #cf1b1b;
+    /* font-size: 124px; */
+    letter-spacing: 8px;
+    cursor: pointer;
+  }
+  
+  .meat::before {
+    content: "LET THERE BE MEAT";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent 0,
+      transparent 2px,
+      #641112 2px,
+      #641112 4px
+    );
+    -webkit-background-clip: text;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    transition: 1s;
+      top: 10px;
+  left: 10px;
+  }
+  
+ .meat::after {
+    content: "LET THERE BE MEAT";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 2px,
+      grey 2px,
+      grey 4px
+    );
+    -webkit-background-clip: text;
+    top: -10px;
+    left: -10px;
+    transition: 1s;
+  }
