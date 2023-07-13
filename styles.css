@@ -137,7 +137,9 @@ header img{
     color: #a81c1f;
     font-size: 5em;
 }
-
+.logo{
+    grid-area:logo;
+ }
 
 .meat {
     position: relative;
@@ -187,3 +189,49 @@ header img{
     left: -10px;
     transition: 1s;
   }
+
+  /*responsive bits*/
+@media only screen and (max-width: 1520px) and (min-width:1011px){
+.mainContainer{
+    grid-template-columns: 500px 500px;
+    grid-auto-rows: 100%;
+    gap: 10px;
+    grid-template-areas: 
+                        "header header "
+                        "header header "
+                        "socials words2"
+                        "words1 words1"
+                        "pic1 logo"
+                        "pic1 asqn2"
+                        "words3 pic2"
+                        "asqn pic2"
+                        "upcoming upcoming"
+
+}
+}
+@media only screen and (max-width: 1010px){
+    .mainContainer{
+        grid-template-columns: 500px;
+        grid-auto-rows: 100%;
+        gap: 10px;
+        grid-template-areas: 
+                            "logo"
+                            "socials" 
+                            "words2"
+                            "words1"
+                            "pic1 "
+                            "pic1 "
+                            "asqn2"
+                            "words3"
+                            "pic2"
+                            "asqn"
+                            "upcoming"
+    
+    }
+    header{
+        display:none;
+    }
+} 
+
+
+  
