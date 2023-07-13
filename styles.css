@@ -42,13 +42,13 @@ a:active {
 .mainContainer{
     /* max-width : 1079px; */
     /* max-width: 1500px; */
-    min-height: 100vh;
+/*     min-height: 100vh; */
     background-color: #a81c1f;
     display:grid;
     position: relative;
     margin: auto;
     grid-template-columns: 500px 500px 500px;
-    grid-auto-rows: 100%;
+    /* grid-auto-rows: 100%; */
     gap: 10px;
     grid-template-areas: 
                         "header header socials"
@@ -196,7 +196,7 @@ header img{
 @media only screen and (max-width: 1520px) and (min-width:1011px){
 .mainContainer{
     grid-template-columns: 500px 500px;
-    grid-auto-rows: 100%;
+  /*   grid-auto-rows: 100%; */
     gap: 10px;
     grid-template-areas: 
                         "header header "
@@ -212,11 +212,15 @@ header img{
 }
 }
 @media only screen and (max-width: 1010px) and (min-width:501px){
+    body{
+        background-size: 1000px auto;
+        /* background-position: left 50%; */
+    }
     .mainContainer{
         max-width: 500px;
         width:100vw;
         grid-template-columns: 500px;
-        grid-auto-rows: 100%;
+  /*       grid-auto-rows: 100%; */
         gap: 10px;
         grid-template-areas: 
                             "logo"
@@ -232,12 +236,17 @@ header img{
                             "upcoming"
     
     }
+
     header{
         display:none;
     }
+
 } 
 /*reconfigures the site to turn into regular flex box style for the tiny phone peasants*/
 @media only screen and (max-width: 500px){
+    body{
+        background-size: 100% auto;
+    }
     .mainContainer{
         max-width: 500px;
         width:100vw;
