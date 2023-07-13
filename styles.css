@@ -30,12 +30,12 @@ a:link{
 a:visited{
     color: grey;
 }
-a:hover {
+/* a:hover {
 
 }
 a:active {
 
-}
+} */
 
 
 
@@ -72,9 +72,6 @@ a:active {
 /* .mainContainer section{
     border:1px solid greenyellow; 
 } */
-header{
-    /* border:1px solid greenyellow;  */
-}
 .pics img{
     width: 100%;
 }
@@ -168,6 +165,7 @@ header img{
       #641112 4px
     );
     -webkit-background-clip: text;
+    background-clip: text;
     top: 10px;
     left: 10px;
     z-index: -1;
@@ -188,6 +186,7 @@ header img{
       grey 4px
     );
     -webkit-background-clip: text;
+    background-clip: text;
     top: -10px;
     left: -10px;
     transition: 1s;
