@@ -2,4 +2,4 @@
 Author Chris Chapman @masteroffluff
 This project is part of the practice challenge "Responsive Club"
 
-All photos and logos are proprety of Red Meat and are used with permission. 
+All images are taken from publicity material and used with permission. (c) Mancvnia Recordings 2023
